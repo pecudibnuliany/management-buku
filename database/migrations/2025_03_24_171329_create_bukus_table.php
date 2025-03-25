@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('judul', 255);
             $table->string('pengarang', 100);
-            $table->string('tahun-terbit');
+            $table->string('tahun_terbit');
             $table->foreignId('kategori_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->foreignId('penerbit_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->timestamps();
